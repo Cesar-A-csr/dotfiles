@@ -18,6 +18,8 @@ Thumbs.db
 # this file change so much and it depens on the machine
 .config/sway/outputs
 .config/sway/config.d/30-outputs.conf
+!.config/sway/config.d/30-outputs.conf.bak
 
 # gammastep file
 .config/gammastep/config.ini
+!.config/gammastep/config.ini.bak

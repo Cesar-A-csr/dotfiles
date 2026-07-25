@@ -1,0 +1,20 @@
+#    , _ ,
+#   ( o o )
+#  /'` ' `'\
+#  |'''''''|
+#  |\\'''//|
+#     """
+#
+
+[general]
+temp-day=5000
+temp-night=2500
+fade=1
+brightness-day=1.0
+brightness-night=0.8
+gamma=1.0
+adjustment-method=wayland
+location-provider=manual
+[manual]
+lat=XX.XX
+lon=XX.XX
