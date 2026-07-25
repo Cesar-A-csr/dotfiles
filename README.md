@@ -11,7 +11,6 @@ Since then, I have learned and understood many things, and I wanted to try a Way
 - `Niri`
 - `SwayFX`
 - `MangoWC`
-- `Hyprland`
 - More...
 
 This is a personal project, and I hope if anyone reads this, it will be useful and give you new ideas, like me when I looked up for many things. Thanks.
@@ -22,32 +21,38 @@ This is a personal project, and I hope if anyone reads this, it will be useful a
 | --------- |-------- |
 | `sway` | A tiling Wayland compositor |
 | `swayidle` | Idle daemon |
-| `swaybg` | Wallpaper/Background |
+| `swaybg` | Wallpaper utility for Wayland compositor |
 | `waybar` | Customizable Wayland bar |
 | `greetd` | Login manager daemon |
-| `cage` | A Wayland kiosk compositor use to start gtkgreeter |
-| `gtkgreeter` | A gtk based greeter for greetd |
+| `gtkgreeter` | GTK based greeter for greetd |
 | `gtklock` | Lock screen |
+| `cage` | A Wayland kiosk compositor use to start gtkgreeter |
+| `wezterm`, `foot`, `alacritty` | Terminals (wezterm main, foot lightweight/default in sway, alacritty default in niri) |
+| `thunar` | File manager |
+| `yazi` | TUI file manager |
 | `wofi` | Launcher / more function coming soon |
-| `wezterm`, `foot` | Terminals (wezterm main, foot lightweight/default in sway) |
-| `nala` |  Command line frontend for the APT package manager| 
-| `thunar` | A file manager |
-| `yazi` | A terminal file manager |
-| `pipewire` | Audio and video processing engine |
-| `brightnessctl`  | Brightness controler |
-| `cliphist` + `wl-clipboard` | Clipboard history |
-| `helvum` | GTK patchbay for pipewire |
-| `pavucontrol` | Based volume control tool |
-| `grim` + `slurp` | Screenshot tools |
-| `swappy` | A Wayland native snapshot and editor tool |
+| `nala` | Command line frontend for the APT package manager | 
+| `nwg-displays` | Output management utility for Wayland compositors | 
 | `nwg-look` | GTK3 settings editor for wlroots environments |
-| `loupe` | A image viewer|
-| `gnome-text-editor` | A text editor|
+| `baobab` | Disk usage analyzer | 
+| `gdu`, `ncdu` | TUI disk usage analyzer | 
+| `gparted` | Partition editor |
+| `lxpolkit` | PolicyKit authentication agent | 
+| `gammastep` | Set color temperature of display according to time of day |
+| `pipewire` | Audio and video processing engine |
+| `pavucontrol` | Based volume control tool |
+| `helvum` | GTK patchbay for pipewire |
+| `swappy` | A Wayland native snapshot and editor tool |
+| `cliphist` + `wl-clipboard` | Clipboard history |
+| `grim` + `slurp` | Screenshot tools |
+| `gnome-text-editor` | Text editor |
+| `loupe` | Image viewer |
 | `mpv` | Video player |
+| `brightnessctl`  | Brightness controler |
 | `tlp` | Optimize laptop battery life |
-| `xdg-desktop-portal/-wlr/-gtk`| Wayland portals for sway|
+| `xdg-desktop-portal/-wlr/-gtk`| Wayland portals for sway |
 | `nmtui` | TUI for controlling NetworkManager |
-| `bluetoothctl` | Bluetooth Control Command Line Tool (rarely used, there are better opt)|
+| `bluetoothctl` | Bluetooth Control Command Line Tool (rarely used, there are better opt) |
 
 ## Keybinding
 
@@ -85,18 +90,17 @@ This is a personal project, and I hope if anyone reads this, it will be useful a
 ## To Do
 
 - [ ] Config gtklock
-- [ ] Create a 30-outputs.conf.bak file as example
+- [x] Create a 30-outputs.conf.bak file as example
 - [ ] Consider to compile and use corrupter with gtklock
 - [ ] Check some logout menus or add funcionality with wofi to use as a logout menu
 - [ ] Config something to change background with wofi + swaybg and be more automatic 
 - [ ] Config something to have a history with cliphist + wofi
 - [ ] Install some notification daemon
-- [ ] Explain `nl` command, use and relation with nwg-display and 30-outputs.conf
 - [ ] Consider to add extra sections in the repo like 'What I learnt / Why I did this or use this / What's new' 
 
 ## Soon or Later
 
-I have many things to add and do like improving and add the missings things in this repo, also in mi systems I have a greeter and lock screen, but it doesn't have a style just default and more missings tools, but step-by-step I will keep going, **see you soon.**
+I have many things to add and do like improving and add the missings things in this repo, also in my systems I have a greeter and lock screen, but it doesn't have a style just default and more missings tools, but step-by-step I will keep going, **see you soon.**
 
 ### Thanks To
 by now this is a secret ;]
