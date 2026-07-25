@@ -19,3 +19,5 @@ Thumbs.db
 .config/sway/outputs
 .config/sway/config.d/30-outputs.conf
 
+# gammastep file
+.config/gammastep/config.ini
