@@ -7,9 +7,8 @@ Config files for Sway a tiling Wayland compositor & Niri a scrollable tiling Way
 Currently, as I write this, I am a relatively new user of the Free Open-Source world and GNU/Linux.
 I started with Ubuntu 25.10 on a Desktop PC, then on a laptop from 2015-2016 with MX Linux.
 Since then, I have learned and understood many things, and I wanted to try a Wayland Window Managers (WM) like:
-- `Sway`
+- `Sway/SwayFX`
 - `Niri`
-- `SwayFX`
 - `MangoWC`
 - More...
 
@@ -89,8 +88,7 @@ This is a personal project, and I hope if anyone reads this, it will be useful a
 
 ## To Do
 
-- [ ] Config gtklock
-- [x] Create a 30-outputs.conf.bak file as example
+- [ ] Config gtklock and add some keybind to lock screen
 - [ ] Consider to compile and use corrupter with gtklock
 - [ ] Check some logout menus or add funcionality with wofi to use as a logout menu
 - [ ] Config something to change background with wofi + swaybg and be more automatic 

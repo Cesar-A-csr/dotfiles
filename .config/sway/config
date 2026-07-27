@@ -34,6 +34,5 @@ gaps outer 2
 # Color de los bordes de ventanas 
 # Los primeros 3 no son usados al remover bordes 
 # border|background|text|indicator|child-border
-client.focused #d50032 #454545 #ffffff #00d5a3 #d50032
-client.unfocused #d50032 #454545 #ffffff #00d5a3 #454545
-
+client.focused #d50032 #454545 #ffffff #f6007c  #d50032
+client.unfocused #454545 #454545 #ffffff #454545 #454545
