@@ -121,7 +121,7 @@
 	"align": 0.5,
         "timezones": ["", "America/Buenos_Aires", "Europe/Madrid", "Asia/Tokyo"],
 	"format": "{:%H:%M %p}",
-        "format-alt": "<b><span color='#ff5599'>{:%a. %d</span> / <span color='#f5ff66'>%b.</span> / <span color='#ffa442'>%Y</span></b>}",
+        "format-alt": "<b><span color='#ff5599'>{:%a %d</span> / <span color='#f5ff66'>%b</span> / <span color='#ffa442'>%Y</span></b>}",
 	"tooltip": true,
         "tooltip-format": "<big><b>{:%Y %B}</b></big>\n\n<tt><big>{calendar}</big></tt>",
 	"calendar": {
