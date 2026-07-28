@@ -1,3 +1,4 @@
+
 /*
 You can type here any CSS rule recognized by GTK+.
 You can temporarily disable this custom CSS by clicking on the “Pause” button above.
@@ -9,7 +10,7 @@ Changes are applied instantly and globally, for the whole application.
 	font-size: 14px;
 	font-style: italic;
         font-family: JetBrainsMono Nerd Font;
-        color: white;
+        color: #a40000;
 	border: none;
         border-radius: 12px;
         box-shadow: none;
@@ -19,8 +20,8 @@ Changes are applied instantly and globally, for the whole application.
 
 window{
 	border-radius: 0;
-        background-image: url("file:///etc/greetd/backgrounds/Black-Reaper-Shadows_1920x1080.png");
-        background-size: auto;
+        background-image: url("file:///etc/greetd/backgrounds/Touka&Kaneki_1920x1080.jpg");
+        background-size: cover;
         background-position: center;
 }
 
@@ -30,7 +31,6 @@ window{
 
 #clock{
         font-weight: lighter;
-	color: #a40000;
 	min-height:5em;
         margin-bottom: 10.5em;
 }
@@ -40,7 +40,7 @@ window{
 }
 
 #input-field{
-        border: 1px solid #a40000;
+        border: 1.5px solid #a40000;
         background-color: transparent;
 }
 
@@ -48,7 +48,7 @@ window{
 #command-selector button{
 	margin: 0;
 	color: #a40000;
-	font-weight: bold;
+	font-weight: 700;
 	border: none;
         box-shadow: none;
         text-shadow: none;
@@ -70,8 +70,7 @@ combobox popover{
 }
 
 cellview{
-        font-weight: bolder;
-        color: #3af1f8;
+	font-weight: 400;
 }
 
 button{	
