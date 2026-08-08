@@ -36,20 +36,21 @@ window{
 }
 
 #body{
+	margin-right: 3em;
         min-height: 10em;	
 }
 
 #input-field{
-        border: 1.5px solid #a40000;
+	margin-right: 0.5em;
+	border: 1.5px solid #a40000;
         background-color: transparent;
 }
 
 #command-selector entry,
 #command-selector button{
-	margin: 0;
 	color: #a40000;
+	margin-right: 0.5em;
 	font-weight: 700;
-	border: none;
         box-shadow: none;
         text-shadow: none;
         background-image: none;
@@ -61,8 +62,6 @@ menuitem,
 combobox,
 combobox window,
 combobox popover{
-        margin: 0;
-        border: none;
         box-shadow: none;
         text-shadow: none;
         background-image: none;
@@ -75,6 +74,7 @@ cellview{
 
 button{	
 	color: white;
+	margin-right: 0.5em;
         box-shadow: none;
         text-shadow: none;
         background-image: none;
