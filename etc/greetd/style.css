@@ -26,13 +26,13 @@ window{
 }
 
 #window {
-        padding-bottom: 12em;
+        padding-bottom: 10.5em;
 }
 
 #clock{
         font-weight: lighter;
 	min-height:5em;
-        margin-bottom: 10.5em;
+        margin-bottom: 5em;
 }
 
 #body{
@@ -74,6 +74,7 @@ cellview{
 }
 
 button{	
+	color: white;
         box-shadow: none;
         text-shadow: none;
         background-image: none;
@@ -82,7 +83,8 @@ button{
         transition: all 0.5s steps(48);
 }
 
-button:hover {
+button:hover,
+button:focus {
         border: 1px solid #a40000; 
 }
 
