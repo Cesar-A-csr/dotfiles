@@ -1,5 +1,5 @@
 * {
-	color: white;
+  color: white;
 	font-size: 14px;
 	font-family: JetBrainsMono Nerd Font;
 	padding: 0;
@@ -10,7 +10,6 @@
 }
 
 window#waybar {
-	color: #ffffff;
 	background: transparent;
 }
 
@@ -22,40 +21,38 @@ window#waybar {
 /* ## Modulos de la izquierda  ## */
 
 #custom-power{
-	color: #d50032;
+	color: #a80030;
 	font-size: 16px;
 	font-weight: 900;
 	padding: 0 10px;
-	background: white;
 	border-radius: 100px;
+  background-color: white;
 }
 
 #workspaces button {
-	color: white;
 	padding: 0 10px;
 	margin: 0 0.5px;
 	border-radius: 100px;
-	background-color: #454545;
-	box-shadow: inset 0px -2px 1px #d50032;
+	background-color: #383838;
+	box-shadow: inset 0px -2px 1px #a80030;
 	transition: all 0.3s steps(48);
 }
 
 #workspaces button:hover {
-	background: #d50032;
+	background: #a80030;
 }
 
 #workspaces button.focused {
 	min-width: 45px;
 }
 
-
 #mode,
 #scratchpad {
 	padding: 0 10px;
 	margin: 0 0.5px;
 	border-radius: 100px;
-	background: rgba(69, 69, 69, 0.65);
-	box-shadow: inset 0px -2px 1px rgba(213, 0, 50, 0.65);    	
+	background: rgba(56, 56, 56, 0.65);
+	box-shadow: inset 0px -2px 1px rgba(168, 0, 48, 0.65);    	
 }
 
 #scratchpad.empty {
@@ -71,8 +68,8 @@ window#waybar {
 	padding: 0 10px;
 	margin: 0 0.5px;
 	border-radius: 100px;
-	background-color: #454545;
-	box-shadow: inset 0px -2px 1px #d50032;
+	background-color: #383838;
+	box-shadow: inset 0px -2px 1px #a80030;
 }
 
 /* ## Modulos de la derecha ## */
@@ -90,45 +87,50 @@ window#waybar {
 	margin: 0 0.5px;
 	padding: 0 10px;
 	border-radius: 100px;
-	background-color: #454545;
-	box-shadow: inset 0px -2px 1px #d50032;
+	background-color: #383838;
+	box-shadow: inset 0px -2px 1px #a80030;
+}
+
+#wireplumber{
+  padding: 0px 15px 0px 10px;
 }
 
 /* ## Estado de los modulos ## */
 
 #idle_inhibitor.activated {
-    color: #2d3436;
-    background-color: #ecf0f1;
+  color: #383838;
+  background-color: white;
 }
 
 #network.disconnected,
 #wireplumber.muted,
 #mpris.disconnected {
-    background-color: #d50032;
+  background-color: #a80030;
 }
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #cpu.warning {
-        animation-duration: 0.75s;
+  animation-duration: 0.75s;
 	animation-name: warning-blink;
-        animation-direction: alternate;
+	animation-direction: alternate;
 	animation-iteration-count: infinite;
-        animation-timing-function: steps(48);
+	animation-timing-function: steps(48);
 }
 
-#cpu.critical {
-    background-color: #d50032;
-    animation-duration: 0.75s;
-    animation-name: critical-blink;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: steps(48);
+#cpu.critical,
+#battery.critical:not(.charging) {
+  background-color: #a80030;
+  animation-duration: 0.75s;
+  animation-name: critical-blink;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
 }
 
 #battery.charging {
-    color: white;
-    background-color: #07b83f;
-    box-shadow: inset 2px -3px 1px #07b83f;
+  color: white;
+  background-color: #07b83f;
+  box-shadow: inset 2px -3px 1px #07b83f;
 }
 
 #battery.plugged {	
@@ -147,38 +149,29 @@ window#waybar {
 	animation-timing-function: steps(48);
 }
 
-#battery.critical:not(.charging) {
-    background-color: #d50032;
-    animation-duration: 0.75s;
-    animation-name: critical-blink;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: steps(48);
-}
-
 /* ## Animaciones de los modulos ## */
 
 @keyframes plugged-blink {
-    to {
-        color: black;
-        background-color: #07b83f;
-	box-shadow: inset 2px -3px 1px #ffffff;
-    }
+  to {
+    color: black;
+    background-color: #07b83f;
+    box-shadow: inset 2px -3px 1px #ffffff;
+  }
 }
 
 @keyframes warning-blink {
-    to {
-        color: black;
-        background-color: #f57811;
-	box-shadow: inset 2px -3px 1px #f57811;
-    }
+  to {
+    color: black;
+    background-color: #f57811;
+	  box-shadow: inset 2px -3px 1px #f57811;
+	}
 }
 
 @keyframes critical-blink {
-    to {
-        color: black;
-        background-color: white;
-    }
+  to {
+    color: black;
+    background-color: white;
+  }
 }
 
 /*

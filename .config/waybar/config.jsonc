@@ -13,13 +13,13 @@
         "sway/workspaces",
 	"sway/window",
         "sway/scratchpad",
-        "sway/mode",
+        "sway/mode"
     ],
 
     "modules-center": [
 	"mpris",
         "clock",
-        "network",
+        "network"
     ],
 
     "modules-right": [
@@ -29,7 +29,7 @@
         "temperature",
 	"battery",
 	"group/utilities",
-        "tray",
+        "tray"
     ],
 
     // Modules configuration
@@ -49,7 +49,7 @@
 	    "reboot": "systemctl reboot",
 	    "suspend": "systemctl suspend",
 	    "hibernate": "systemctl hibernate"
-	},
+	}
     },
 
     "sway/workspaces": {		
@@ -63,8 +63,8 @@
             "2": [],
             "3": [],
 	    "4": [],
-	    "5": [],
-        },
+	    "5": []
+        }
     },
 
     "sway/window": {
@@ -72,13 +72,13 @@
 	"align": 0.5,
         "format": "",
 	"icon": true,
-	"tooltip": false,
+	"tooltip": false
     },
 
     "sway/mode": {
 	"justify": "center",
 	"align": 0.5,
-        "format": "<span style=\"italic\">{}</span>",
+        "format": "<span style=\"italic\">{}</span>"
     },
 
     "sway/scratchpad": {
@@ -107,13 +107,13 @@
 	"tooltip-format": "[Escuchando ahora]\n\n{title} · {length}\n{artist} · {album}",
         "player-icons": {
             "default": " 󰖟 ",
-	    "mpv": "  ",
+	    "mpv": "  "
         },
         "status-icons": {
 	    "playing": "  ",
             "paused": "  ",
-	    "stopped": "  ",
-        },
+	    "stopped": "  "
+        }
     },
 
     "clock": {
@@ -155,7 +155,7 @@
         "format-linked": "{ifname} (No IP) 󱎔",
         "format-disconnected": "Disconnected",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "tooltip-format": "{ifname} via {gwaddr} | {netmask}",	"format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+        "tooltip-format": "{ifname} via {gwaddr} | {netmask}",	"format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
 	// "{bandwidthUpBits} {bandwidthDownBits}: {bandwidthTotalBits}",
 	// "{bandwidthUpBytes} {bandwidthDownBytes}: {bandwidthTotalBytes}",
     },
@@ -168,7 +168,7 @@
         "format": "{percentage_used}% ",
 	"tooltip": true,
 	"tooltip-format": "{used} out of {total} on /",
-	"unit": "GiB",
+	"unit": "GiB"
     },
 
     "memory": {
@@ -176,7 +176,7 @@
 	"align": 0.5,
         "format": "{}% ",
 	"tooltip": true,
-	"tooltip-format": "Mem: {used}GiB / {total}GiB\nSwap: {swapUsed}GiB / {swapTotal}GiB",
+	"tooltip-format": "Mem: {used}GiB / {total}GiB\nSwap: {swapUsed}GiB / {swapTotal}GiB"
     },
 
     "cpu": {
@@ -188,8 +188,8 @@
         "tooltip": true,
 	"states": {
 	    "warning": 70,
-            "critical": 90,
-	},
+            "critical": 90
+	}
     },
 
     "temperature": {
@@ -203,7 +203,7 @@
         "critical-threshold": "70",
         "format-critical": "{temperatureC}°C {icon}",
         "format-icons": ["", "", "󰀨", ""],
-	"tooltip": false,
+	"tooltip": false
 	// 
     },
 
@@ -213,7 +213,7 @@
         "states": {	    
             "good": 80,
 	    "warning": 30,
-            "critical": 20,
+            "critical": 20
         },
 	"interval": 6,
         "format": "{capacity}% {icon}",
@@ -221,7 +221,7 @@
         "format-plugged": "{capacity}% ",
         "format-icons": ["", "", "", "", ""],
 	"tooltip": true,
-	"tooltip-format": "Time to empty: {time}",
+	"tooltip-format": "Time to empty: {time}"
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
     },
@@ -236,14 +236,14 @@
 	    "children-class": "hidden", 
 	    "transition-duration": 1500,
 	    "click-to-reveal": true,
-	    "transition-left-to-right": false,
+	    "transition-left-to-right": false
 	},
 	"modules": [
 	    "custom/group",
 	    //"upower",
 	    "idle_inhibitor",
 	    "backlight",
-	    "wireplumber",
+	    "wireplumber"
 	]
     },
 
@@ -253,7 +253,7 @@
 	"justify": "center",
 	"align": 0.5,
 	"format" : "  ", 
-	"tooltip": false,
+	"tooltip": false
 	//  
     },
 
@@ -267,7 +267,7 @@
         "tooltip": true,
         "tooltip-format": ": {percentage}/{time}",
 	"tooltip-spacing": 0,
-	"tooltip-padding": 0,
+	"tooltip-padding": 0
     },
 
     "idle_inhibitor": {
@@ -277,8 +277,8 @@
         "format": "{icon}",
         "format-icons": {
             "activated": "",
-            "deactivated": "",
-        },
+            "deactivated": "󰅶"
+        }
     }, 
 
     "backlight": {
@@ -289,7 +289,7 @@
 	"tooltip-format":"{percent}% {icon} ",
         "format": "{icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
-	"scroll-step": 5.0,
+	"scroll-step": 5.0
  },
 
     "wireplumber": {
@@ -302,7 +302,7 @@
         "format-icons": ["󰕿", "󰖀", "󰕾",""],
 	"scroll-step": 5.0,
         "on-click-right": "helvum",
-	"on-click": "pavucontrol",
+	"on-click": "pavucontrol"
     },
 
     "tray": {
@@ -310,6 +310,6 @@
 	"align": 0.5,
         "icon-size": 12,
         "spacing": 10
-    },
+    }
 
 }
