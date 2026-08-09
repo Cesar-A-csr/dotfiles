@@ -26,7 +26,7 @@ window{
 }
 
 #window {
-        padding-bottom: 10.5em;
+        padding-bottom: 11em;
 }
 
 #clock{
@@ -36,7 +36,6 @@ window{
 }
 
 #body{
-	margin-right: 1em;
         min-height: 10em;	
 }
 
