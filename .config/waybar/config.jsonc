@@ -121,7 +121,7 @@
 	"align": 0.5,
         "timezones": ["", "America/Buenos_Aires", "Europe/Madrid", "Asia/Tokyo"],
 	"format": "{:%H:%M %p}",
-        "format-alt": "<b><span color='#ff5599'>{:%a %d</span> / <span color='#f5ff66'>%b</span> / <span color='#ffa442'>%Y</span></b>}",
+        "format-alt": "<b><span color='#ff5599'>{:%a %d</span> / <span color='#f5ff66'>%b</span> / <span color='#fc9e21'>%Y</span></b>}",
 	"tooltip": true,
         "tooltip-format": "<big><b>{:%Y %B}</b></big>\n\n<tt><big>{calendar}</big></tt>",
 	"calendar": {
@@ -132,7 +132,7 @@
             "format": {
 		"months":     "<span color='#ffead3'><b>{}</b></span>",
                 "days":       "<span color='#ffeadf'><b>{}</b></span>",
-                "weeks":      "<span color='#ffa442'><b>W{}</b></span>",
+                "weeks":      "<span color='#fc9e21'><b>W{}</b></span>",
                 "weekdays":   "<span color='#f5ff66'><b>{}</b></span>",
                 "today":      "<span color='#ff5599'><b><u>{}</u></b></span>"
             }
