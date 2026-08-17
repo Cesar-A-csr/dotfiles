@@ -97,7 +97,7 @@ Hello there, this section is made to know what the most new feature add, done or
 
 I made a new section called "**What's new**", there you will find the most recent work and modification I have done. It is posible you will find a whole explanation of why I did it, how I did it and more, it will depend on what is the new feature.
 
-# The gtklock style and design
+### The gtklock style and design
 
 Gtklock is a lockscreen based in gtkgreet the look it basically the same, is familiar, I didn't want it to have really different looks and design between the greeter and the locker. I know there are some lighter or more customized options, such as swaylock, waylock, hyprlock, but in the end I decided on gtklock. \
 Gtklock use a .ini file, a .css file, and also use .xml file to have a layout, this feature is pretty interesting, basically you can have your lockscreen the way you want. I use a layout.xml that is just the design of gnome lockscreen. Why? well I have use Gnome DE and I liked it, so this feature was perfect to me, at least to try it. \
@@ -124,7 +124,7 @@ Basically what it does is:
 4. Depending on the result mostly dark/light we use a specific .css file
 5. finally we called gtklock with the chosen style and delete the two screenshots
 
-## To Do
+## To do
 
 - [x] Config gtklock and add some keybind to lock screen
 - [x] Compile and use corrupter with gtklock
