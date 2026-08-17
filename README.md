@@ -21,10 +21,12 @@ This is a personal project, and I hope if anyone reads this, it will be useful a
 | `sway`                                | A tiling Wayland compositor                                                       |
 | `swayidle`                            | Idle daemon                                                                       |
 | `swaybg`                              | Wallpaper utility for Wayland compositor                                          |
+| `swaync`                              | Notification daemon with a GTK gui for notifications and the control center.      |
 | `waybar`                              | Customizable Wayland bar                                                          |
 | `greetd`                              | Login manager daemon                                                              |
 | `gtkgreeter`                          | GTK based greeter for greetd                                                      |
 | `gtklock`                             | Lock screen                                                                       |
+| `corrupter`                           | Image glitcher suitable for producing nice looking backgrounds                    |
 | `cage`                                | A Wayland kiosk compositor use to start gtkgreeter                                |
 | `wezterm`/`foot`/`alacritty`          | Terminals (wezterm main, foot sway's default, alacritty niri's default)           |
 | `thunar`                              | File manager                                                                      |
@@ -57,41 +59,41 @@ This is a personal project, and I hope if anyone reads this, it will be useful a
 
 |               Key Combo                               |                          Action                           |
 |-------------------------------------------------------|-----------------------------------------------------------|
-| `Super + t`                                           | Launch terminal                                           |
-| `Super + q`                                           | Close focused window                                      |
-| `Super + Space`                                       | App launcher                                              |
-| `Super + e`                                           | Launch file manager                                       |
-| `Super + x`                                           | Lock screen (gtklock)                                     |
-| `Super + Shift + r`                                   | Reload Sway config                                        |
-| `Super + Shift + w`                                   | Reload waybar                                             |
-| `Super + Shift + q`                                   | Exit Sway                                                 |
+| `Super + T`                                           | Launch terminal (wezterm)                                 |
+| `Super + Q`                                           | Close focused window                                      |
+| `Super + Space`                                       | App launcher (wofi)                                       |
+| `Super + E`                                           | Launch file manager (Thunar)                              |
+| `Super + X`                                           | Lock screen (gtklock)                                     |
+| `Super + Shift + R`                                   | Reload Sway config                                        |
+| `Super + Shift + W`                                   | Reload waybar                                             |
+| `Super + Shift + Q`                                   | Exit Sway                                                 |
 | `Super + arrows`                                      | Move the focus in windows                                 |
-| `Super + h/j/k/l`                                     | Move the focus in windows (vim style)                     |
+| `Super + H/J/K/L`                                     | Move the focus in windows (vim style)                     |
 | `Super + Shift + arrows`                              | Move the focus windows                                    |
-| `Super + Shift + h/j/k/l`                             | Move the focus windows (vim style)                        |
+| `Super + Shift + H/J/K/L`                             | Move the focus windows (vim style)                        |
 | `Super + Ctrl + arrows`                               | Resize window                                             |
-| `Super + Ctrl + h/j/k/l`                              | Resize window (vim style)                                 |
+| `Super + Ctrl + H/J/K/L`                              | Resize window (vim style)                                 |
 | `Super + 1-9/0`                                       | Switch to workspace 1-10                                  |
 | `Super + Shift + 1-9/0`                               | Move focus windows to workspace 1-10                      |
-| `Super + b`                                           | Split vertical                                            |
-| `Super + v`                                           | Split horizontal                                          |
-| `Super + w`                                           | Toggle split                                              |
-| `Super + f`                                           | Fullscreen                                                |
-| `Super + Shift + space`                               | Floating toggle                                           |
-| `Super + Alt + space`                                 | Focus between the tiling window and the floating window   |
-| `Super + minus`                                       | Move to scratchpad                                        |
-| `Super + Shift + minus`                               | Scratchpad show                                           |
+| `Super + B`                                           | Split vertical                                            |
+| `Super + V`                                           | Split horizontal                                          |
+| `Super + W`                                           | Toggle split                                              |
+| `Super + F`                                           | Fullscreen                                                |
+| `Super + Shift + Space`                               | Floating toggle                                           |
+| `Super + Alt + Space`                                 | Focus between the tiling window and the floating window   |
+| `Super + Minus`                                       | Move to scratchpad                                        |
+| `Super + Shift + Minus`                               | Scratchpad show                                           |
 | `Print`                                               | Take full screenshot                                      |
 | `Super + Print`                                       | Take screenshot of selected area                          |
 | `Super + Shift + Print`                               | Take screenshot of focus window                           |
 | `Ctrl + Print`                                        | Take full screenshot and copy to clipboard                |
 | `Ctrl + Super + Print`                                | Take screenshot of selected area and copy to clipboard    |
 | `Ctrl + Alt + Print`                                  | Take screenshot of focus window and copy to clipboard     |
-| `Super + Shift + s`                                   | Open Swappy with the screenshot on the clipboard          |
+| `Super + Shift + S`                                   | Open Swappy with the screenshot on the clipboard          |
 
 ## What's new
 
-Hello there, this section is made to know what the most new feature add, done or modify in the dotfiles and in this repository ;]
+Hello there, this section is made to know what the most new feature added, implemented or modified in the dotfiles and in this repository ;]
 
 ### A new section
 
@@ -99,22 +101,22 @@ I made a new section called "**What's new**", there you will find the most recen
 
 ### The gtklock style and design
 
-Gtklock is a lockscreen based in gtkgreet the look it basically the same, is familiar, I didn't want it to have really different looks and design between the greeter and the locker. I know there are some lighter or more customized options, such as swaylock, waylock, hyprlock, but in the end I decided on gtklock. \
-Gtklock use a .ini file, a .css file, and also use .xml file to have a layout, this feature is pretty interesting, basically you can have your lockscreen the way you want. I use a layout.xml that is just the design of gnome lockscreen. Why? well I have use Gnome DE and I liked it, so this feature was perfect to me, at least to try it. \
+Gtklock is a lockscreen based in gtkgreet the look is basically the same, is familiar, I didn't want it to have a really different looks and design between the greeter and the locker. I know there are some lighter or more customized options, such as swaylock, waylock, hyprlock, but in the end I decided on gtklock. \
+Gtklock use a .ini file, .css files, and also use a .xml file to have a layout, this feature is pretty interesting, basically you can have your lockscreen the way you want. I use a layout.xml that is just the design of gnome lockscreen. Why? well I have use Gnome DE and I liked it, so this feature was perfect to me, at least to try it. \
 The question now is: How did I do it? Luckily, someone had already done it and I found it when I was looking for a lockscreen, I copied the layout.xml and modified just a little. \
 The repo is [https://github.com/tomdewildt/gnome-gtklock-theme/tree/master](https:/github.com/tomdewildt/gnome-gtklock-theme/tree/master) \
 I used the layout and style, and modified them to my liking. I created four .css files: two with light styling and two with dark styling, two of them use corrupter, and the other two are "defaults". \
-I will have to still do some 'features' specific with the default files, but that will be done later.
+I will have to still do some specific 'features' with the default files, but that will be done later.
 
 ### gtklock + corrupter
 
 What is corrupter? [https://github.com/r00tman/corrupter](https://github.com/r00tman/corrupter) \
 corrupter is a **Simple image glitcher suitable for producing nice looking i3lock backgrounds.** \
-It is written in Go and as the name suggests it glitchs the image, you provide a normal image (.png), then you have it glitched (.png). \
+It is written in Go and as the name suggests it glitches the image, you provide a normal image (.png), then you have it glitched (.png). \
 I use it with gtklock using a background image that is glitch by corrupter, I did this with a script called `corrupter-lockscreen`, but before all of that I had to do a few things. \
 I had to install Go in my system. You can find many tutorial and also read Go documentation to do this. \
 Then I cloned corrupter's repository and followed the "Getting Started" section, from there, I could use corrupter without any "problem", except for just a little detail, every time I wanted to use it, I had to specify the path to the binary file. To solve this "problem" I used symbolics link. \
-`~$ ln -s ~/corrupter/corrupter ~/.local/bin/` \
+`ln -s ~/corrupter/corrupter ~/.local/bin/` \
 After all, I could use corrupter without specifying the binary path, just by typing _corrupter_ in the terminal worked. Then I made the bash script `corrupter-lockscreen`. \
 Basically what it does is:
 
