@@ -1,0 +1,26 @@
+#! /bin/bash
+
+DIR="/tmp"
+TMP_IMG="$DIR/screenshot.png"
+CORRUPTER_TMP_IMG="$DIR/corrupter-screenshot.png"
+CSS_DIR="$XDG_CONFIG_HOME/gtklock"
+
+grim "$TMP_IMG"
+corrupter "$TMP_IMG" "$CORRUPTER_TMP_IMG"
+
+# We turn the img to gray color escale, then with 'fx:mean' we calc the avg brightness
+# and 'info' gives the outputs
+# 0.0->black | 1.0->white
+brightness=$(magick "$CORRUPTER_TMP_IMG" -colorspace Gray -format "%[fx:mean]" info:)
+
+# We eval 'brightness > 0.5', if so we got 1->true, else we got 0->false 
+is_light=$(echo "$brightness > 0.5" | bc -l)
+
+if [ "$is_light" -eq 1 ]; then
+	SELECTED_CSS="$CSS_DIR/corrupter-light-style.css"
+else
+	SELECTED_CSS="$CSS_DIR/corrupter-dark-style.css"
+fi
+
+gtklock -s "$SELECTED_CSS" -d
+rm "$TMP_IMG" "$CORRUPTER_TMP_IMG"
