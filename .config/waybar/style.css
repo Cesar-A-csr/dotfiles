@@ -1,10 +1,9 @@
-* {
-  color: white;
+* {	
 	font-size: 14px;
 	font-family: JetBrainsMono Nerd Font;
 	padding: 0;
-	margin: 0px 2px;
-	border-radius: 12px;
+	margin: 0em 0.15em;
+	border-radius: 0.75em;
 	border: none;
 	box-shadow: none;
 }
@@ -15,26 +14,32 @@ window#waybar {
 
 #window,
 #workspaces {
-   	margin: 0 5px;
+   	margin: 0em 0.25em;
 }
 
 /* ## Modulos de la izquierda  ## */
 
-#custom-power{
+#custom-power {
 	color: #a80030;
 	font-size: 16px;
 	font-weight: 900;
-	padding: 0 10px;
-	border-radius: 100px;
+	padding: 0 0.75em;
+	border-radius: 6.25em;
   	background-color: white;
+	transition: all 0.3s steps(48);
+}
+
+#custom-power:hover {
+	color: #ffffff;
+  	background-color: #a80030;
 }
 
 #workspaces button {
-	padding: 0 10px;
-	margin: 0 0.5px;
-	border-radius: 100px;
+	padding: 0 1em;
+	margin: 0 0.05em;
+	border-radius: 6.25em;
 	background-color: #383838;
-	box-shadow: inset 0px -2px 1px #a80030;
+	box-shadow: inset 0em -0.125em 0.0625em #a80030;
 	transition: all 0.3s steps(48);
 }
 
@@ -43,16 +48,17 @@ window#waybar {
 }
 
 #workspaces button.focused {
-	min-width: 45px;
+	min-width: 3em;
+	color: #383838;
+	background-color: #ffffff;
 }
 
-#mode,
 #scratchpad {
-	padding: 0 10px;
-	margin: 0 0.5px;
-	border-radius: 100px;
+	padding: 0 0.75em;
+	margin: 0;
+	border-radius: 6.25em;
 	background: rgba(56, 56, 56, 0.65);
-	box-shadow: inset 0px -2px 1px rgba(168, 0, 48, 0.65);    	
+	box-shadow: inset 0em -0.125em 0.0625em rgba(168, 0, 48, 0.65);    	
 }
 
 #scratchpad.empty {
@@ -64,12 +70,12 @@ window#waybar {
 #mpris,
 #clock,
 #network  {
-	min-width: 75px;
-	padding: 0 10px;
-	margin: 0 0.5px;
-	border-radius: 100px;
+	min-width: 6em;
+	padding: 0 1em;
+	margin: 0 0.05em;
+	border-radius: 6.25em;
 	background-color: #383838;
-	box-shadow: inset 0px -2px 1px #a80030;
+	box-shadow: inset 0em -0.125em 0.0625em #a80030;
 }
 
 /* ## Modulos de la derecha ## */
@@ -84,15 +90,15 @@ window#waybar {
 #idle_inhibitor,
 #backlight,
 #wireplumber {
-	margin: 0 0.5px;
-	padding: 0 10px;
-	border-radius: 100px;
+	margin: 0 0.05em;
+	padding: 0 0.8em;
+	border-radius: 6.25em;
 	background-color: #383838;
-	box-shadow: inset 0px -2px 1px #a80030;
+	box-shadow: inset 0em -0.125em 0.0625em #a80030;
 }
 
 #wireplumber{
-  padding: 0px 15px 0px 10px;
+  padding: 0em 0.9375em 0em 0.625em;
 }
 
 /* ## Estado de los modulos ## */
@@ -130,7 +136,7 @@ window#waybar {
 #battery.charging {
   color: white;
   background-color: #07b83f;
-  box-shadow: inset 2px -3px 1px #07b83f;
+  box-shadow: inset 0.125em -0.1875em 0.0625em #07b83f;
 }
 
 #battery.plugged {	
@@ -155,7 +161,7 @@ window#waybar {
   to {
     color: black;
     background-color: #07b83f;
-    box-shadow: inset 2px -3px 1px #ffffff;
+    box-shadow: inset 0.125em -0.1875em 0.0625em #ffffff;
   }
 }
 
@@ -163,7 +169,7 @@ window#waybar {
   to {
     color: black;
     background-color: #f57811;
-	  box-shadow: inset 2px -3px 1px #f57811;
+	  box-shadow: inset 0.125em -0.1875em 0.0625em #f57811;
 	}
 }
 
@@ -199,7 +205,7 @@ window#waybar {
 }
 
 #privacy-item {
-    padding: 0 5px;
+    padding: 0 0.5em;
     color: white;
 }
 
