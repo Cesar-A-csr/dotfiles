@@ -133,10 +133,10 @@ Add an ‘.focused’ state in the workspaces to have better "quality life" and 
 
 ### Scripts/Binary path
 
-I changed the execution, correction I did the right use and exec of scripts. \
-I have some scripts for different purposes, but I was invoking and running them wrong in the sway's config files, I was running them using the absolute path ‘~/.config/module/scripts/file’. \
-What I should have done from the start is to use the ‘~/.local/bin/’ directory, so I have some script files in each directory and I made a softlink from each file to ‘~/.local/bin/’. \
-After all of that I could use them easier and more comfortable than before and also it is the right, clean, simple, modular and reusable practice
+I changed the way of running scripts, correction I did the right scripts's use and exec. \
+I have some scripts for different purposes, but I was invoking and running them wrong, I was runnig them directly in the sway's config files, I was running them using the absolute path `~/.config/module/scripts/file`. \
+What I should have done from the start is to use the `~/.local/bin/` directory, so I have some script files in each directory and I made a softlink from each file to `~/.local/bin/`. \
+After all of that, I could use them easier and more comfortable than before, and also it is the right, clean, simple, modular and reusable practice.
 
 ## To do
 
