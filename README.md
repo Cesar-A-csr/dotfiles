@@ -126,6 +126,18 @@ Basically what it does is:
 4. Depending on the result mostly dark/light we use a specific .css file
 5. finally we called gtklock with the chosen style and delete the two screenshots
 
+### Waybar modification
+
+There are some changes I have done it, I 'migrated' or move on from ‘px’ to ‘em’ in the differents pills-like components. \
+Add an ‘.focused’ state in the workspaces to have better "quality life" and also in the custom-power component.
+
+### Scripts/Binary path
+
+I changed the execution, correction I did the right use and exec of scripts. \
+I have some scripts for different purposes, but I was invoking and running them wrong in the sway's config files, I was running them using the absolute path ‘~/.config/module/scripts/file’. \
+What I should have done from the start is to use the ‘~/.local/bin/’ directory, so I have some script files in each directory and I made a softlink from each file to ‘~/.local/bin/’. \
+After all of that I could use them easier and more comfortable than before and also it is the right, clean, simple, modular and reusable practice
+
 ## To do
 
 - [x] Config gtklock and add some keybind to lock screen
