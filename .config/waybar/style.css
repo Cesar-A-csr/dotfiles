@@ -123,6 +123,14 @@ window#waybar {
 	animation-timing-function: steps(48);
 }
 
+#battery.warning:not(.charging){	
+	animation-duration: 0.75s;
+	animation-name: warning-blink;
+	animation-direction: alternate;
+	animation-iteration-count: 16;
+	animation-timing-function: steps(48);
+}
+
 #cpu.critical,
 #battery.critical:not(.charging) {
   background-color: #a80030;
@@ -144,14 +152,6 @@ window#waybar {
 	animation-name: plugged-blink;
 	animation-direction: alternate;
 	animation-iteration-count: infinite;
-	animation-timing-function: steps(48);
-}
-
-#battery.warning {	
-	animation-duration: 0.75s;
-	animation-name: warning-blink;
-	animation-direction: alternate;
-	animation-iteration-count: 16;
 	animation-timing-function: steps(48);
 }
 
