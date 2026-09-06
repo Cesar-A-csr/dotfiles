@@ -202,7 +202,7 @@
         "format-warning": "{temperatureC}°C {icon}",
         "critical-threshold": "70",
         "format-critical": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", "󰀨", ""],
+        "format-icons": ["", "", "", "󰀨", ""],
 	"tooltip": false
 	// 
     },
