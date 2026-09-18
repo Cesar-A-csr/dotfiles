@@ -26,9 +26,11 @@ This is a personal project, and I hope if anyone reads this, it will be useful a
 | `greetd`                              | Login manager daemon                                                              |
 | `gtkgreeter`                          | GTK based greeter for greetd                                                      |
 | `gtklock`                             | Lock screen                                                                       |
+| `gtklock-playerctl-module`            | Player control module for gtklock                                                 |
+| `gtklock-userinfo-module`             | User info module for gtklock                                                      |
 | `corrupter`                           | Image glitcher suitable for producing nice looking backgrounds                    |
 | `cage`                                | A Wayland kiosk compositor use to start gtkgreeter                                |
-| `ghostty`/`foot`/`alacritty`/`kitty`  | Terminals (ghostty main, foot sway's default, alacritty niri's default, kitty)    |
+| `ghostty`/`kitty`                     | Terminals (ghostty main, kitty alternative)                                       |
 | `thunar`                              | File manager                                                                      |
 | `virt-manager`                        | Desktop application for managing virtual machines                                 |
 | `yazi`                                | TUI file manager                                                                  |
