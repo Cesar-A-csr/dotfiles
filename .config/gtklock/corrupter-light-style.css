@@ -42,7 +42,7 @@ window{
 }
 
 #input-field:focus {
-  box-shadow: inset 0 0 0 2px #00b4d8;
+  box-shadow: inset 0 0 0 2px #00b4d8; 
   background-color: #ffffff;
 }
 
@@ -57,7 +57,7 @@ window{
   padding: 4px 12px;
   border-radius: 8px;
   box-shadow: none;
-  background: #90e0ef;
+  background: #0cd7fd;
   transition: all 150ms ease;
 }
 
@@ -91,4 +91,53 @@ window{
   font-size: 12pt;
   font-weight: 800;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+}
+
+#userinfo-box {
+    margin-bottom: 20px;
+}
+
+#userinfo-avatar {
+    border-radius: 50%;
+    min-width: 120px;
+    min-height: 120px;
+    border: 2px solid #cba6f7;
+}
+
+#userinfo-label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #cdd6f4;
+}
+
+#playerctl-box {
+    background-color: rgba(30, 30, 46, 0.6);
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+#playerctl-album-art {
+    border-radius: 8px;
+}
+
+#playerctl-title {
+    font-weight: bold;
+    color: #f5e0dc;
+}
+
+#playerctl-artist {
+    font-size: 0.9rem;
+    color: #bac2de;
+}
+
+/* Botones del reproductor */
+#playerctl-play-pause, #playerctl-next, #playerctl-previous {
+    background: transparent;
+    border: none;
+    color: #cba6f7;
+}
+
+#playerctl-play-pause:hover {
+    color: #b4befe;
 }

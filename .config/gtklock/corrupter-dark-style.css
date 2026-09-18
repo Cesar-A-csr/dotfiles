@@ -28,6 +28,23 @@ window{
   text-shadow: 0px 2px 4px #383838;
 }
 
+#user-info {
+	border: 1px blue solid;
+}
+
+/* La imagen de perfil/avatar */
+#user-info image {
+    border-radius: 50%;
+    min-width: 96px;
+    min-height: 96px;
+}
+
+/* El texto del nombre de usuario */
+#user-info label {
+    font-size: 14pt;
+    font-weight: bold;
+}
+
 /* Input */
 #input-field {
   color: #ffffff;
@@ -91,4 +108,53 @@ window{
   font-size: 12pt;
   font-weight: 800;
   text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
+}
+
+#userinfo-box {
+    margin-bottom: 20px;
+}
+
+#userinfo-avatar {
+    border-radius: 50%;
+    min-width: 120px;
+    min-height: 120px;
+    border: 2px solid #cba6f7;
+}
+
+#userinfo-label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #cdd6f4;
+}
+
+#playerctl-box {
+    background-color: rgba(30, 30, 46, 0.6);
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+#playerctl-album-art {
+    border-radius: 8px;
+}
+
+#playerctl-title {
+    font-weight: bold;
+    color: #f5e0dc;
+}
+
+#playerctl-artist {
+    font-size: 0.9rem;
+    color: #bac2de;
+}
+
+/* Botones del reproductor */
+#playerctl-play-pause, #playerctl-next, #playerctl-previous {
+    background: transparent;
+    border: none;
+    color: #cba6f7;
+}
+
+#playerctl-play-pause:hover {
+    color: #b4befe;
 }
