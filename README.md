@@ -28,15 +28,17 @@ This is a personal project, and I hope if anyone reads this, it will be useful a
 | `gtklock`                             | Lock screen                                                                       |
 | `corrupter`                           | Image glitcher suitable for producing nice looking backgrounds                    |
 | `cage`                                | A Wayland kiosk compositor use to start gtkgreeter                                |
-| `wezterm`/`foot`/`alacritty`          | Terminals (wezterm main, foot sway's default, alacritty niri's default)           |
+| `ghostty`/`foot`/`alacritty`/`kitty`  | Terminals (ghostty main, foot sway's default, alacritty niri's default, kitty)    |
 | `thunar`                              | File manager                                                                      |
 | `yazi`                                | TUI file manager                                                                  |
 | `wofi`                                | Launcher / more function coming soon                                              |
 | `nala`                                | Command line frontend for the APT package manager                                 |
+| `flatpak`                             | Application deployment framework for desktop apps                                 |
 | `nwg-displays`                        | Output management utility for Wayland compositors                                 |
 | `nwg-look`                            | GTK3 settings editor for wlroots environments                                     |
 | `baobab`                              | Disk usage analyzer                                                               |
 | `gdu`/`ncdu`                          | TUI disk usage analyzer                                                           |
+| `btop`                                | Modern and colorful command line resource monitor                                 | 
 | `gparted`                             | Partition editor                                                                  |
 | `lxpolkit`                            | PolicyKit authentication agent                                                    |
 | `gammastep`                           | Set color temperature of display according to time of day                         |
@@ -48,18 +50,24 @@ This is a personal project, and I hope if anyone reads this, it will be useful a
 | `grim` + `slurp`                      | Screenshot tools                                                                  |
 | `gnome-text-editor`                   | Text editor                                                                       |
 | `loupe`                               | Image viewer                                                                      |
+| `evince`                              | PDF viewer                                                                        |
+| `ghostwriter`                         | A markdown editor                                                                 |
+| `xournalpp`                           | A hand note-taking with many features                                             |
 | `mpv`                                 | Video player                                                                      |
 | `brightnessctl`                       | Brightness controler                                                              |
 | `tlp`                                 | Optimize laptop battery life                                                      |
-| `xdg-desktop-portal/-wlr/-gtk`        | Wayland portals for sway                                                          |
-| `nmtui`                               | TUI for controlling NetworkManager                                                |
+| `xdg-desktop-portal`                  | Wayland portals for WMs                                                           |
+| `xdg-desktop-portal-wlr`              | Wayland portals for Wms                                                           |
+| `xdg-desktop-portal-gtk`              | Wayland portals for Wms                                                           |
+| `network-manager-tui (nmtui)`         | TUI for controlling NetworkManager                                                |
 | `bluetoothctl`                        | Bluetooth Control Command Line Tool (rarely used, there are better opt)           |
+
 
 ## Keybinding
 
 |               Key Combo                               |                          Action                           |
 |-------------------------------------------------------|-----------------------------------------------------------|
-| `Super + T`                                           | Launch terminal (wezterm)                                 |
+| `Super + T`                                           | Launch terminal (ghostty)                                 |
 | `Super + Q`                                           | Close focused window                                      |
 | `Super + Space`                                       | App launcher (wofi)                                       |
 | `Super + E`                                           | Launch file manager (Thunar)                              |
