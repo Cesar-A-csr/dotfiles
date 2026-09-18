@@ -56,7 +56,9 @@ This is a personal project, and I hope if anyone reads this, it will be useful a
 | `ghostwriter`                         | A markdown editor                                                                 |
 | `xournalpp`                           | A hand note-taking with many features                                             |
 | `mpv`                                 | Video player                                                                      |
+| `autotiling`                          | Automatically switch the window split orientation in sway and i3                  |q
 | `brightnessctl`                       | Brightness controler                                                              |
+| `playerctl`                           | Utility to control media player via MPRIS                                         |
 | `tlp`                                 | Optimize laptop battery life                                                      |
 | `xdg-desktop-portal`                  | Wayland portals for WMs                                                           |
 | `xdg-desktop-portal-wlr`              | Wayland portals for Wms                                                           |
