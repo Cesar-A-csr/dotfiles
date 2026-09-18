@@ -30,6 +30,7 @@ This is a personal project, and I hope if anyone reads this, it will be useful a
 | `cage`                                | A Wayland kiosk compositor use to start gtkgreeter                                |
 | `ghostty`/`foot`/`alacritty`/`kitty`  | Terminals (ghostty main, foot sway's default, alacritty niri's default, kitty)    |
 | `thunar`                              | File manager                                                                      |
+| `virt-manager`                        | Desktop application for managing virtual machines                                 |
 | `yazi`                                | TUI file manager                                                                  |
 | `wofi`                                | Launcher / more function coming soon                                              |
 | `nala`                                | Command line frontend for the APT package manager                                 |
@@ -48,6 +49,7 @@ This is a personal project, and I hope if anyone reads this, it will be useful a
 | `swappy`                              | A Wayland native snapshot and editor tool                                         |
 | `cliphist` + `wl-clipboard`           | Clipboard history                                                                 |
 | `grim` + `slurp`                      | Screenshot tools                                                                  |
+| `imagemagick`                         | A software suite to create, edit, and compose bitmap images                       |
 | `gnome-text-editor`                   | Text editor                                                                       |
 | `loupe`                               | Image viewer                                                                      |
 | `evince`                              | PDF viewer                                                                        |
@@ -59,7 +61,7 @@ This is a personal project, and I hope if anyone reads this, it will be useful a
 | `xdg-desktop-portal`                  | Wayland portals for WMs                                                           |
 | `xdg-desktop-portal-wlr`              | Wayland portals for Wms                                                           |
 | `xdg-desktop-portal-gtk`              | Wayland portals for Wms                                                           |
-| `network-manager-tui (nmtui)`         | TUI for controlling NetworkManager                                                |
+| `network-manager-tui` (nmtui)         | TUI for controlling NetworkManager                                                |
 | `bluetoothctl`                        | Bluetooth Control Command Line Tool (rarely used, there are better opt)           |
 
 
