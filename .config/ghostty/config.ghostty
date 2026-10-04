@@ -1,0 +1,141 @@
+# If you want to know more you have web site: https://ghostty.org/docs/config/reference
+
+# Syntax 'key = value'
+# Comments start with a `#` and are only valid on their own line.
+# Blank lines are ignored
+
+# Empty values reset the configuration to the default value
+# font-family =
+
+# Keys are case-sensitive. background != Background. Ghostty always uses lowercase keys.
+# Values can be quoted or unquoted. font-family="JetBrains Mono" == font-family=JetBrains Mono.
+
+# You can split your configuration into multiple files by using the `config-file` key in your configuration file.
+# Note that any `config-file` keys are processed at the end of the current file.
+# This means that any keys after a `config-file` key will not override the keys in the loaded file if they are set.
+
+# config-file = some/relative/sub/config
+# config-file = ?optional/config
+# config-file = /absolute/path/config
+
+# === Font === #
+
+#font-family=
+#font-family-bold=
+#font-family-italic=
+#font-family-bold-italic=
+
+font-size = 10
+
+#font-style=true
+#font-style-bold=
+#font-style-italic=
+#font-style-bold-italic=
+
+#font-synthetic-style = true
+
+# If you want to know some features your font has
+# You can do it in https://fontdrop.info/#/
+
+#font-feature=
+
+# === Theme === #
+
+# Ghostty has already some themes you can use
+# In order to see and pick one run these in your terminal:
+# ghostty +list-themes
+# or just
+
+theme=Brogrammer
+
+#Here is a list of some themes that I like =]
+
+#Abernathy
+#Apple System Colors
+#Brogrammer
+#Builtin Tango Dark
+#Dark Pastel
+#Deep
+#iTerm2 Tango Dark
+#Kitty Default
+#Night Lion V1
+#Nocturnal Winter 
+#Paul Millr 
+#Shades Of Purple
+#Vercel
+
+# More information in: https://ghostty.org/docs/config/reference#theme
+
+# === Background & Foreground === #
+
+#background=RRGGBB
+#foreground=RRGGBB
+
+# 0-1
+background-opacity=0.9
+
+# false|true 0-20
+background-blur=true
+
+background-image=?~/Pictures/Fondos de pantalla/Debian_1600x1200.jpg
+
+# 0-1
+background-image-opacity=0.75
+
+#top-left	| top-center	| top-right
+#center-left	| center	| center-right
+#bottom-left	| bottom-center	| bottom-right
+
+background-image-position=bottom-center
+
+#contain|cover|stretch|none
+background-image-fit=cover
+
+# === Palette === #
+
+#N=Color (N=1-16 & Color=RRGGBB)
+#1=Color
+#2=Color
+#3=Color
+#4=Color
+#5=Color
+#6=Color
+#7=Color
+#...
+#16=Color
+
+# === Cursor === #
+
+#cursor-color=RRGGBB
+
+# 0-1
+#cursor-opacity=
+
+#block|bar|underline|block_hollow
+#cursor-style=
+
+#blank|true|false
+#cursor-style-blink=
+
+cursor-text=000000
+mouse-hide-while-typing=true
+
+# === Notify === #
+
+#never|unfocused|always
+notify-on-command-finish=unfocused
+
+#bell|notify
+notify-on-command-finish-action=notify
+
+# === Windows === #
+
+# === Keybind & Key-remap
+
+# This is a extensive part if you want to know more I recommend you to see and read
+# https://ghostty.org/docs/config/reference#keybind for keybinding and 
+# https://ghostty.org/docs/config/reference#key-remap for key-remap
+
+# === Config=file === #
+
+#config-file = ?auto/theme.ghostty
