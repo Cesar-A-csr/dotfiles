@@ -130,6 +130,10 @@ notify-on-command-finish-action=notify
 
 # === Windows === #
 
+window-decoration = auto
+window-padding-x = 3
+window-padding-y = 4
+
 # === Keybind & Key-remap
 
 # This is a extensive part if you want to know more I recommend you to see and read
